@@ -28,19 +28,24 @@ Ferramenta CLI para recortar vídeos, criar GIFs, extrair imagens e áudio de tr
 ### Build da imagem
 
 ```bash
-docker build -t video-editor .
+docker build -t clip-craft .
 ```
 
 Rodando o container com Docker CLI
 
-docker run -it --rm -v "$(pwd)":/app video-editor
+```bash
+docker run -it --rm clip-craft
+```
 
 Rodando com Docker Compose
 
+```bash
 docker-compose up
+```
 
 ## Estrutura do Projeto
 
+```bash
 video_editor/
 │
 ├── main.py
@@ -51,6 +56,7 @@ video_editor/
 ├── Dockerfile
 ├── docker-compose.yml
 ├── README.md
+```
 
 ## Como Usar
 
